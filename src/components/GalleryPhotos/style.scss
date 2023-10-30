@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+.container-gal {
+  padding: $padding-value;
+  & > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    li {
+      padding: 0 16px;
+      text-transform: uppercase;
+      font-weight: 400;
+      position: relative;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+      &.active,
+      &:hover {
+        opacity: 1;
+      }
+      &::after {
+        content: "";
+        height: 8px;
+        width: 8px;
+        background-color: white;
+        border-radius: 50%;
+        // display: block;
+        position: absolute;
+        right: -6px;
+        top: 5px;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  & > div {
+    margin-top: 48px;
+
+    img {
+      object-fit: cover;
+      transition: filter 0.3s;
+      &:hover {
+        filter: grayscale(1);
+      }
+    }
+  }
+}
+
+.light-mode {
+  .container-gal {
+    & > ul {
+      li {
+        &::after {
+          background-color: #000000;
+        }
+      }
+    }
+  }
+}

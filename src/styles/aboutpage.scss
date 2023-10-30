@@ -1,0 +1,83 @@
+@import "../styles/variables";
+.aboutpage-wrapper {
+  padding: $padding-value;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 124px);
+  margin-top: 60px;
+  & > div {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > img {
+      height: 550px;
+      transition: filter 0.3s;
+      &:hover {
+        filter: grayscale(1);
+      }
+    }
+
+    .textabout {
+      max-width: 500px;
+      margin-left: 150px;
+
+      @media (max-width: 1000px) {
+        max-width: unset;
+        margin-left: 50px;
+      }
+      & > h2 {
+        font-size: 40px;
+      }
+    }
+
+    @media (max-width: 885px) {
+      flex-direction: column;
+      & > img {
+        margin: 64px 0 32px 0;
+        height: 450px;
+      }
+      .textabout {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      & > img {
+        height: 350px;
+      }
+    }
+
+    .they-trust {
+      margin-top: 60px;
+      @media (max-width: 1000px) {
+        margin-top: 30px;
+      }
+      & > h2 {
+        font-size: 40px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        & > li {
+          transition: transform 0.2s;
+          img {
+            height: 79px;
+          }
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: $padding-value-mobile;
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+.footer_wrapper {
+  padding: $padding-value;
+  margin: 0 auto;
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #292929;
+    padding-top: 16px;
+    & > span {
+      svg {
+        position: relative;
+        bottom: -4px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      & > span {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: $padding-value-mobile;
+  }
+}
+
+.light-mode{
+  .footer_wrapper {
+    & > div {
+      border-top: 1px solid #e1e1e1;
+    }
+  }
+}

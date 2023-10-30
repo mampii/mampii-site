@@ -1,0 +1,45 @@
+.input-container{
+    position: relative;
+
+    input{
+        height: 40px;
+    }
+
+    textarea{
+        resize: none;
+        padding: 12px 0;
+    }
+    
+    input,
+    textarea{
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      border-bottom: 1px solid #FFFFFF;
+      color: #FFFFFF;
+      &:focus-visible~label,
+      &.not-vide~label{
+        top: -10px;
+        left: 0;
+        color: #cfcfcf;
+      }
+    }
+    label{
+      position: absolute;
+      left: 4px;
+      top: 14px;  
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+
+    &.error-input{
+      input,
+      textarea{
+        border-color: red;
+        
+      }
+      label{
+        color: red;
+      }
+    }
+  }

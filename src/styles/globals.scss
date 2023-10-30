@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "ButlerLight";
+  src: local("ButlerLight"), url("../fonts/Butler-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: local("NewYork"), url("../fonts/NewYork.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Megan";
+  src: local("Megan"), url("../fonts/Megan.woff") format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  background-color: #0d0f10;
+  color: white;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sixCaps {
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+}
+
+p {
+  line-height: 24px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
+}
+
+input,
+textarea {
+  font-family: "ButlerLight";
+  font-size: 14px;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+button {
+  font-family: "ButlerLight";
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  min-height: 100vh;
+}
+
+body.main-full-h {
+  main {
+    min-height: calc(100vh - 124px);
+  }
+}
+
+body.light-mode {
+  background-color: #fdfdfd;
+  color: black;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  //  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar-thumb {
+  //  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #242424;
+}
+
+* {
+  transition-delay: 0s !important;
+}
