@@ -70,6 +70,10 @@
             height: 70px;
             width: 100px;
             object-fit: contain;
+
+              @media (max-width: 768px) {
+                width: 85px;
+              }
           }
           &:hover {
             transform: scale(1.2);

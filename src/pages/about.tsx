@@ -16,13 +16,13 @@ import logo10 from "../images/logo10.png";
 import logo11 from "../images/logo11.png";
 import logo12 from "../images/logo12.jpg";
 import logo13 from "../images/logo13.png";
-// import logo14 from "../images/logo14.jfif";
+import logo14 from "../images/logo14.png";
 import logo15 from "../images/logo15.jpg";
 import logo16 from "../images/logo16.png";
 import logo17 from "../images/logo17.png";
-// import logo18 from "../images/logo18.jpeg";
-// import logo19 from "../images/logo19.png";
-// import logo20 from "../images/logo20.png";
+import logo18 from "../images/logo18.png";
+import logo19 from "../images/logo19.png";
+import logo20 from "../images/logo20.png";
 import logo21 from "../images/logo21.png";
 import logo22 from "../images/logo22.png";
 import logo23 from "../images/logo23.png";
@@ -122,9 +122,9 @@ const AboutPage: React.FC = () => {
                 <li>
                   <img src={logo13} alt="Logo" />
                 </li>
-                {/* <li>
+                <li>
                   <img src={logo14} alt="Logo" />
-                </li> */}
+                </li>
                 <li>
                   <img src={logo15} alt="Logo" />
                 </li>
@@ -134,7 +134,7 @@ const AboutPage: React.FC = () => {
                 <li>
                   <img src={logo17} alt="Logo" />
                 </li>
-                {/* <li>
+                <li>
                   <img src={logo18} alt="Logo" />
                 </li>
                 <li>
@@ -142,13 +142,13 @@ const AboutPage: React.FC = () => {
                 </li>
                 <li>
                   <img src={logo20} alt="Logo" />
-                </li> */}
+                </li>
                 <li>
                   <img src={logo21} alt="Logo" />
                 </li>
-                {/* <li>
+                <li>
                   <img src={logo22} alt="Logo" />
-                </li> */}
+                </li>
                 <li>
                   <img src={logo23} alt="Logo" />
                 </li>
