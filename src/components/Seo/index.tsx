@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { useSiteMetadata } from "../../hooks/use-site-metadata";
 import { Helmet } from "react-helmet";
 import imageMeta from "../../images/mampii.webp";
-import iconTag from "../../images/icon-light.png";
+import iconTag from "../../images/favicon.png";
 
 type SeoProps = {
   title?: string;
