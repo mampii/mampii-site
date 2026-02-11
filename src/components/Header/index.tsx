@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import { Link } from "gatsby";
-import MaterialSymbolsLinkedCameraOutline from "../Icons/MaterialSymbolsLinkedCameraOutline";
 import Facebook from "../Icons/Facebook";
 import Instagram from "../Icons/Instagram";
 import Email from "../Icons/Email";
@@ -12,22 +11,23 @@ import Youpic from "../Icons/Youpic";
 import IconNight from "../Icons/IconNight";
 import IconDay from "../Icons/IconDay";
 import icon from "../../images/icon.png";
+import iconDark from "../../images/icon-light.png";
 
 const Header = () => {
   const [showMenuMobile, setShowMenuMobile] = useState(false);
 
-  const [isNight, setIsNight] = useState(true);
+  // const [isNight, setIsNight] = useState(true);
 
-  const changeMode = () => {
-    var bodyTag = document.querySelector("body");
-    if (bodyTag?.classList.contains("light-mode")) {
-      bodyTag?.classList.remove("light-mode");
-    } else {
-      bodyTag?.classList.add("light-mode");
-    }
+  // const changeMode = () => {
+  //   var bodyTag = document.querySelector("body");
+  //   if (bodyTag?.classList.contains("light-mode")) {
+  //     bodyTag?.classList.remove("light-mode");
+  //   } else {
+  //     bodyTag?.classList.add("light-mode");
+  //   }
 
-    setIsNight((current) => !current);
-  };
+  //   setIsNight((current) => !current);
+  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +49,10 @@ const Header = () => {
     <header className="header-wrapper">
       <nav>
         <Link to="/">
+          {/* <MaterialSymbolsLinkedCameraOutline />
+          Mampi. */}
           <img className="icon-normal" src={icon} alt="Logo Mampii" />
+          <img className="icon-light" src={iconDark} alt="Logo Mampii" />
         </Link>
         <ul className={`nav-menu mobileActive ${showMenuMobile && "active"}`}>
           <li>
@@ -111,11 +114,11 @@ const Header = () => {
               <span>Contact</span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <span className="change-mode" onClick={() => changeMode()}>
               {isNight ? <IconNight /> : <IconDay />}
             </span>
-          </li>
+          </li> */}
         </ul>
         <button
           className="menu-burger"

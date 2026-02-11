@@ -33,12 +33,12 @@ header {
       align-items: center;
       font-size: 24px;
       img {
-        height: 55px;
+        height: 40px;
         &.icon-light{
           display: none;
         }
         @media (max-width: 850px) {
-          height: 45px;
+          height: 30px;
         }
       }
     }

@@ -77,7 +77,7 @@ export default function HTML(props) {
       `}</style>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} className="hidebody">
+      <body {...props.bodyAttributes} className="hidebody light-mode">
         {props.preBodyComponents}
         <div className="overlay-loading">
           <div></div>
